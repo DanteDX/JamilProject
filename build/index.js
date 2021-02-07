@@ -43,7 +43,7 @@ const renderingData = (id,data) =>{
 }
 
 const fetchingData = () =>{
-    db.collection('JamilNames').get()
+    db.collection('JamilNames').where("firstName","==","Jamil").orderBy("middleName").get()
         .then(snapShot =>{
             const info = snapShot.docs;
             info.forEach(eachDoc =>{
