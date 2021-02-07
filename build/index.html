@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Helping Jamil Bro!</title>
+    <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-firestore.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+  </head>
+  <body>
+    <form id="mainForm">
+      <div style="text-align: center; text-decoration: underline">
+        Enter Your characters Information:
+      </div>
+      <br />
+      <label for="firstName">First Name</label>
+      <input required type="text" id="firstName" name="firstName" />
+      <br />
+      <label for="middleName">Middle Name: </label>
+      <input required type="text" id="middleName" name="middleName" />
+      <br />
+      <label for="lastName">Last Name: </label>
+      <input required type="text" id="lastName" name="lastName" />
+      <br /><br />
+      <button id="submitButton" type="submit">ADD INFORMATION</button>
+    </form>
+    <div style="text-align:center;text-decoration: underline;">All The Names You have provided</div>
+    <div id="AllNames"></div>
+  </body>
+  <script src="./config.js"></script>
+  <script src="./index.js"></script>
+</html>
